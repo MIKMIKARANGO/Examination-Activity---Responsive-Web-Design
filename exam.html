@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature | Our Beautiful Planet</title>
+    <link rel="stylesheet" href="exam.css">
+</head>
+<body>
+
+
+    <header>
+        <nav class="navbar">
+            <h1>NATURE.</h1>
+
+            <button class="menu-toggle" id="menuToggle">☰</button>
+
+            <ul class="nav-links" id="navigation">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>EXPLORE THE BEAUTY OF NATURE</h2>
+            <p>Discover the beauty of our planet and learn why we should protect it.</p>
+            <a href="#about" class="btn">Explore More</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>ABOUT NATURE</h2>
+        <p>
+            Nature gives us life, fresh air, clean water, food, and shelter.
+            From beautiful forests and mountains to oceans and wildlife,
+            every part of nature plays an important role in our world.
+            We must protect and preserve our environment for future generations.
+        </p>
+    </section>
+
+    
+    <section class="features">
+        <h2>THE BEAUTY OF NATURE</h2>
+
+        <div class="feature-container">
+            <div class="feature-card">
+                <h3>Forests</h3>
+                <p>Forests provide oxygen, shelter for animals, and natural resources.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Mountains</h3>
+                <p>Mountains are home to many plants and animals and provide fresh water.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Oceans</h3>
+                <p>Oceans support marine life and help maintain the Earth's climate.</p>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="gallery" id="gallery">
+        <h2>EXPLORE NATURE</h2>
+        <p>Take a look at the wonderful beauty of our planet.</p>
+
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.fa_S7cQ6EC1acIe8UupsAAHaE8?r=0&w=3972&h=2648&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Beautiful Forest">
+                <h3>Green Forests</h3>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.fa_S7cQ6EC1acIe8UupsAAHaE8?r=0&w=3972&h=2648&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Beautiful Mountains">
+                <h3>Majestic Mountains</h3>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.fa_S7cQ6EC1acIe8UupsAAHaE8?r=0&w=3972&h=2648&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Beautiful Ocean">
+                <h3>Blue Oceans</h3>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.fa_S7cQ6EC1acIe8UupsAAHaE8?r=0&w=3972&h=2648&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Beautiful Waterfall">
+                <h3>Waterfalls</h3>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.fa_S7cQ6EC1acIe8UupsAAHaE8?r=0&w=3972&h=2648&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Wild Animals">
+                <h3>Wildlife</h3>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.fa_S7cQ6EC1acIe8UupsAAHaE8?r=0&w=3972&h=2648&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Beautiful Flowers">
+                <h3>Flowers and Plants</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="protection">
+        <h2>PROTECT OUR PLANET</h2>
+        <p>
+            Keep nature beautiful by planting trees, reducing waste,
+            avoiding plastic pollution, and protecting wildlife.
+            Every small action helps create a healthier environment.
+        </p>
+        <a href="#contact" class="btn">Join Us</a>
+    </section>
+
+   
+    <footer id="contact">
+        <h2>NATURE.</h2>
+        <p>Love Nature. Protect Wildlife. Preserve Our Planet.</p>
+        <p>&copy; 2026 Nature Website. All Rights Reserved.</p>
+    </footer>
+
+  
+    <script>
+        const menuToggle = document.getElementById("menuToggle");
+        const navigation = document.getElementById("navigation");
+
+        menuToggle.addEventListener("click", function() {
+            navigation.classList.toggle("active");
+
+            const isOpen = navigation.classList.contains("active");
+            menuToggle.setAttribute("aria-expanded", isOpen);
+        });
+
+        
+        const links = document.querySelectorAll("#navigation a");
+
+        links.forEach(function(link) {
+            link.addEventListener("click", function() {
+                navigation.classList.remove("active");
+                menuToggle.setAttribute("aria-expanded", "false");
+            });
+        });
+    </script>
+
+</body>
+</html>
